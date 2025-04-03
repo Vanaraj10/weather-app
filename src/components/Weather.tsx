@@ -58,6 +58,7 @@ const Weather = () => {
       });
     } catch (error) {
        setWeatherData(null);
+       alert("City not found, please try again.");
        console.error("Error in fetching weather data");
     }
   };
